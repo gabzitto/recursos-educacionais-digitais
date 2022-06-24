@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="theme-color" content="#f9f9f9">
+        <link rel="canonical" href="https://www.sucessoinabalavel.com.br/">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+         <meta name="apple-mobile-web-app-title" content="edson iOS">
+         <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+         <link rel="manifest" href="manifest.json" /> 
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recursos Educacionais Digitais - RED</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+    <script>
+        if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+        console.log("[PWA Builder] active service worker found, no need to register");
+        } else {
+        navigator.serviceWorker
+        .register("pwabuilder-sw.js", {
+        scope: "./"
+        })
+        .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+        });
+        }
+        }
+    </script>
+        <div class="container">
+            <header>
+                <div class="titulo">
+                    <h1>Recursos Educacionais Digitais - RED</h1>
+                </div>
+            </header>
+            <main>
+                <ul class="listaItems">
+                    <!--
+                    <li>
+                        <img src="./img/img.jpg" alt="img teste">
+                        <div class="itens-div">
+                            <h2>Nome do red</h2>
+                            <hr>
+                            <p><span>Descrição: </span>GCompris é um software educacional de alta qualidade que compreende numerosas atividades para crianças com idade entre 2 e 10 anos. GCompris é um software livre francês</p>
+                            <p><span>Autor: </span>author</p>
+                            <p><span>Categoria: </span>subjects.name</p>
+                            <p><span>Link: </span><a href="">default_attachment_location</a></p>
+                            <span class="key-word">jogos</span>
+                            <span class="key-word">jogos</span>
+                            <span class="key-word">jogos</span>
+
+                        </div>
+                    </li>
+                    -->
+                </ul>
+            </main>
+            <div class="pagination">
+                <ul>
+                    <li class="page_id" id="selected-page">1</li>
+                    <li class="page_id" >2</li>
+                    <li class="page_id" >3</li>
+                    <li class="page_id" >4</li>
+                </ul>
+            </div>
+        </div>
+        
+    </body>
+</html>

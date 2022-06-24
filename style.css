@@ -1,0 +1,130 @@
+body, h1, h2, a, ul, li, img, main, header, span, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(220, 235, 235);
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(90, 252, 163);
+    position: absolute;
+    left: 0%;
+}
+
+.container {
+    height: 100%;
+    width:950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo{
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+main {
+    margin-top: 90px;
+}
+
+.listaItems h2{
+    margin-bottom: 15px;
+}
+
+.listaItems span{
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+.listaItems p{
+    margin-bottom: 8px;
+}
+
+.key-word{
+    background-color: rgb(36, 161, 20);
+    border-radius: 10%;
+    padding: 0.1rem;
+    margin: 0.5rem;
+}
+
+.itens-div{}
+
+.keyClass{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main ul li {
+    background-color: aqua;
+    margin-bottom: 10px;
+    list-style-type: none;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+main ul li img {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+}
+
+.pagination{
+    margin-bottom: 30px;
+}
+
+.pagination ul li {
+    list-style-type: none;
+    cursor: pointer;
+    background-color: aqua;
+    padding: 1rem;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+.pagination ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+#selected-page {
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+      width: 100%;  
+    }
+
+    main ul li img {
+        width: 380px;
+        height: 100px;
+        
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    main ul li {
+        flex-direction: column;
+        width: 100%;
+        height: 780px;
+    }
+
+    main{
+        width: 100%;
+    }
+}
+
